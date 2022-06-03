@@ -12,7 +12,7 @@ fields as (
         {{
             fivetran_utils.fill_staging_columns(
                 source_columns=adapter.get_columns_in_relation(ref('stg_facebook_ads__ad_conversion_tmp')),
-                staging_columns=get_ad_history_columns()
+                staging_columns=get_ad_conversion_columns()
             )
         }}
         
