@@ -121,12 +121,12 @@ sources:
           - name: template_app_link_spec_iphone
             description: Link of the template app for iphone
             
-      - name: ad_conversion
-        description: Each record in this table reflects an ad conversion.
-        columns:
-          - name: ad_id
-            description: The ID of the ad the report relates to.
-          - name: action_type
-            description: The type of action that determined a conversion.
-          - name: _fivetran_synced
-            description: "{{ doc('_fivetran_synced') }}"
+        - name: ad_conversion
+          description: Each record in this table reflects an ad conversion.
+          columns:
+            - name: ad_id
+              description: The ID of the ad the report relates to.
+            - name: action_type
+              description: The type of action that determined a conversion.
+            - name: _fivetran_synced
+              description: "{{ doc('_fivetran_synced') }}"
