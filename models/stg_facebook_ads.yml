@@ -121,3 +121,13 @@ models:
         description: The number of clicks the ad had on the given day.
       - name: spend
         description: The spend on the ad in the given day.
+        
+  - name: stg_facebook_ads__ad_conversion
+    description: Each record in this table reflects an ad conversion.
+    columns:
+      - name: ad_id
+        description: The ID of the ad the report relates to.
+      - name: action_type
+        description: The type of action that determined a conversion.
+      - name: _fivetran_synced
+        description: "{{ doc('_fivetran_synced') }}"
